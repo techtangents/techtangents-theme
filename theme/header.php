@@ -32,16 +32,23 @@
 			</a>
 		</div>
 
-		<div class="site-branding">
-
+<!-- 		<div class="site-branding">
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div><!-- .site-branding -->
+		</div> -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">&sigma;</a>
+			<ul>
+				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">&sigma;</a></li>
+				<li><a href="https://twitter.com/techtangents">twitter</a></li>
+				<li><a href="https://github.com/techtangents">github</a></li>
+			</ul>
+		</nav>
+
+
+
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'techtangents' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
