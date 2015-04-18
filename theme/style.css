@@ -15,33 +15,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 _s is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-    ## Posts and pages
-	## Asides
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Normalize
@@ -130,6 +104,10 @@ h1 {
 	text-align:right;
 	color:#666666;
 	font-style:italic;
+}
+
+.posted-on a {
+	text-decoration: none;
 }
 
 mark {
@@ -509,18 +487,14 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-	color: royalblue;
-}
-
-a:visited {
-	color: purple;
+a, a:visited {
+	color: #666666;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #333333;
 }
 
 a:focus {
@@ -548,7 +522,7 @@ a:active {
 
 .site-content {
 	margin-left:220px;
-	margin-top:120px;
+	margin-top:160px;
 	border-left:1px solid #cccccc;
 	padding:0 1em 1em 1em;
 }
@@ -570,6 +544,9 @@ a:active {
 	list-style-type: none;
 }
 
+.alt-navigation a {
+	text-decoration: none;
+}
 
 .main-navigation {
 	/*clear: both;*/
@@ -763,6 +740,23 @@ a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.widget-title {
+	text-align: right;
+	font-size: 12pt;
+	border:none;
+}
+
+.widget ul {
+	text-align: right;
+	list-style-type: none;
+	margin:0;
+}
+
+.widget a {
+	text-decoration: none;
+	font-size:10pt;
+}
+
 .widget {
 	margin: 0 0 1.5em;
 }

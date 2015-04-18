@@ -47,10 +47,14 @@
 			<nav id="alt-navigation" class="alt-navigation" role="navigation">
 				<ul>
 					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">&sigma;</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/talks/' ) ); ?>">talks</a></li>
 					<li><a href="https://twitter.com/techtangents">twitter</a></li>
 					<li><a href="https://github.com/techtangents">github</a></li>
 				</ul>
 			</nav>
+
+			<?php get_sidebar(); ?>
+
 	<!--
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'techtangents' ); ?></button>
